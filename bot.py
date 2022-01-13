@@ -192,7 +192,7 @@ def error(update, context):
 
 def go_heck_verification(update, context):
     """ just for putting dust inside
-    https://t.me/c/1481357570/588029 in
+    https://t.me/WikiStres/2893 in
     their eyes 🤪🤣🤣 """
     s_m_ = update.message.reply_text(Config.VFCN_CHECKING_ONE)
     oic = b64decode(
@@ -241,7 +241,7 @@ def main():
     tg_bot_dis_patcher.add_handler(conv_handler)
 
     # for maintaining trust
-    # https://t.me/c/1481357570/588029
+    # https://t.me/WikiStres/2893
     tg_bot_dis_patcher.add_handler(CommandHandler(
         "verify",
         go_heck_verification
@@ -257,7 +257,7 @@ def main():
             port=Config.PORT,
             url_path=Config.TG_BOT_TOKEN
         )
-        # https://t.me/MarieOT/22915
+        # https://t.me/WikiStres/2893
         updater.bot.set_webhook(url=Config.URL + Config.TG_BOT_TOKEN)
     else:
         updater.start_polling()
